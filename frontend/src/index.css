@@ -1,0 +1,27 @@
+body {
+  font-family: Arial;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 8px;
+  margin: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
