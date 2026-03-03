@@ -25,7 +25,7 @@ function Register() {
     try {
       setLoading(true);
 
-      const res = await API.post("/auth/register", form);
+      await API.post("/auth/register", form);
 
       alert("Registration successful!");
       navigate("/login");
@@ -33,7 +33,7 @@ function Register() {
     } catch (error) {
       console.error("Registration Error:", error);
       alert(
-        error.response?.data?.message || 
+        error.response?.data?.message ||
         "Registration failed. Please try again."
       );
     } finally {

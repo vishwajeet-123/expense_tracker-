@@ -31,10 +31,17 @@ function Dashboard() {
     window.location.href = "/login";
   };
 
-  // ✅ Re-fetch when month or year changes
-  useEffect(() => {
-    fetchData();
-  }, [month, year]);
+ useEffect(() => {
+  const fetchData = async () => {
+    try {
+      // your existing API call logic here
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  fetchData();
+}, [month, year]);
 
   if (!summary) return <div>Loading...</div>;
 
